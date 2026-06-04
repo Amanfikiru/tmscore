@@ -1,9 +1,23 @@
-﻿double doubleValue = 0.1;
-double doubleResult = doubleValue + doubleValue + doubleValue;
+﻿Exc1.Run();
 
-Console.WriteLine($"Double Result: {doubleResult}");
+Console.WriteLine();
 
-decimal decimalValue = 0.1m;
-decimal decimalResult = decimalValue + decimalValue + decimalValue;
+Exc2.Run();
 
-Console.WriteLine($"Decimal Result: {decimalResult}");
+Console.WriteLine();
+
+var enrollment = new EnrollmentRecord(
+    "STU-001",
+    "CS-401",
+    DateTime.UtcNow);
+
+Console.WriteLine(enrollment);
+
+var course = new Course
+{
+    Code = "CS-401",
+    Title = "Advanced C#",
+    Capacity = 30
+};
+
+Console.WriteLine(course.Title);
