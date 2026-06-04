@@ -1,9 +1,9 @@
-﻿string? region = null;
+﻿double doubleValue = 0.1;
+double doubleResult = doubleValue + doubleValue + doubleValue;
 
-Console.WriteLine($"Region (conditional): {region?.ToUpper()}");
+Console.WriteLine($"Double Result: {doubleResult}");
 
-string upperRegion = region ?? "unassinged";
-Console.WriteLine($"Region (conditional): {upperRegion}");
+decimal decimalValue = 0.1m;
+decimal decimalResult = decimalValue + decimalValue + decimalValue;
 
-region ??= "Addis ababa";
-Console.WriteLine($"Region (conditional): {region}");
+Console.WriteLine($"Decimal Result: {decimalResult}");
