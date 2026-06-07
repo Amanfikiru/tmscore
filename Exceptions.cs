@@ -31,3 +31,4 @@ public class CapacityReachedException : InvalidOperationException
         CourseCode = courseCode; 
     } 
 }
+
